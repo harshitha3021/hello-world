@@ -95,9 +95,7 @@ git commit -m "updated"
 git remote add origin https://github.com/creator/maven2.git
 git push -u origin main
 
-9.Paste this into `index.html`:
-
-```html
+9.
 <!DOCTYPE html>
 <html>
 <head>
@@ -117,34 +115,30 @@ git push -u origin main
 </body>
 </html>
 
-
-## ?? Step 4: Add jQuery Logic
-Create a new file in the same folder called `script.js` and paste:
-$(document).ready(function(){
-  // Add task
-  $("#addTask").click(function(){
-    let task = $("#taskInput").val();
-    if(task){
-      $("#taskList").append("<li>" + task + " <button class='remove'>Remove</button></li>");
-      $("#taskInput").val(""); // clear input
-
-    }
-  });
-  $(document).on("click", ".remove", function(){
-    $(this).parent().remove();
-  });
-
-  function getTasks(){
-    let tasks = [];
-    $("#taskList li").each(function(){
-      tasks.push($(this).text().replace(" Remove",""));
+====================================script.js==============
+$(document).ready(function() {
+    
+    // 1. Add Task Function
+    $("#addTask").click(function() {
+        let task = $("#taskInput").val(); // Get the text from the input box
+        
+        if (task) {
+            // Append a new bullet point (<li>) with the task and a Remove button
+            $("#taskList").append(`<li>${task} <button class="remove">Remove</button></li>`);
+            
+            // Clear the input box after adding
+            $("#taskInput").val(''); 
+        }
     });
-    return tasks;
-  }
-  $("#taskList").on("DOMSubtreeModified", function(){
-    console.log("Current Tasks:", getTasks());
-  });
+
+    // 2. Remove Task Function
+    $(document).on("click", ".remove", function() {
+        // Find the parent <li> of the clicked button and remove it completely
+        $(this).parent().remove();
+    });
+
 });
+ 
 
 
 8.docker --version
