@@ -170,4 +170,69 @@ git push origin main
 
 
 
+index.html
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>Task Manager</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h2>Task Manager</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button id="addTask">Add Task</button>
+
+    <h3>Tasks:</h3>
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+script.js
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) {
+    module.exports = factory;
+  } else {
+    factory(root.jQuery);
+  }
+})(typeof globalThis !== "undefined" ? globalThis : this, function ($) {
+  if (typeof $ === "undefined" || typeof document === "undefined") {
+    return;
+  }
+
+  $(function () {
+    // Add task
+    $("#addTask").on("click", function () {
+      let task = $("#taskInput").val();
+      if (task) {
+        $("#taskList").append(
+          "<li>" + task + " <button class='remove'>Remove</button></li>",
+        );
+        $("#taskInput").val(""); // clear input
+      }
+    });
+
+    $(document).on("click", ".remove", function () {
+      $(this).parent().remove();
+    });
+
+    function getTasks() {
+      let tasks = [];
+      $("#taskList li").each(function () {
+        tasks.push($(this).text().replace(" Remove", ""));
+      });
+      return tasks;
+    }
+
+    $("#taskList").on("DOMSubtreeModified", function () {
+      console.log("Current Tasks:", getTasks());
+    });
+  });
+});
+
+
 
