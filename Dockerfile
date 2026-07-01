@@ -2,11 +2,12 @@
 Git--Version
 Git Config --global user.name".."
 Git Config --global user.email".."
-mkdir Myproject
+mkdir myproject
 cd myproject
 get init
 echo "hello mit "> index.txt
-git add.
+git add .
+git status
 git commit -m "initial commit"
 git remote add origin URl
 git branch -M main
@@ -14,17 +15,17 @@ git push-u origin main
 
 2.
 Git clone URL 
-CD voting system (repository name you gave) 
-Git check out – b feature 
-Echo "hello world " >file. text 
-Git add .
-Git commit - m " initial changes"
-Git check out master 
-Git merge feature 
-Git check out feature 
-Git rebase master 
-Git push origin master 
-Git push origin feature
+cd voting system (repository name you gave) 
+git checkout – b feature 
+echo "hello world " >file. text 
+git add .
+git commit - m " initial changes"
+git check out main
+git merge feature 
+git checkout feature 
+git rebase master 
+git push origin main 
+git push origin feature
 
 5. describe('Google Search Test', () => { 
  it('should open google and verify title', async () => { 
@@ -34,6 +35,12 @@ Git push origin feature
  }); 
 });
 
+ npm init -y
+ npm init wdio
+ npm run wdio
+
+
+ 
 
 6. describe('XPath Locator Test', () => {
     it('should locate element using XPath', async () => {
@@ -50,7 +57,10 @@ Git push origin feature
     });
 });
 
-7   mkdir maven2
+
+
+7   
+mkdir maven2
 cd maven2
 type nul > pom.xml
 mkdir src\main\java
@@ -60,7 +70,6 @@ tree /f
 next vscode ali open folder ali maven2 ali  app.java hogbeku
 
 package com.example;
-
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello Maven!");
@@ -94,6 +103,8 @@ git add .
 git commit -m "updated"
 git remote add origin https://github.com/creator/maven2.git
 git push -u origin main
+
+
 
 9.
 <!DOCTYPE html>
