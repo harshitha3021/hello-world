@@ -168,6 +168,7 @@ docker rmi nginx
 
 Write this in VS Code (main.py) file
 def test_example(): assert 1 + 1 == 2
+
 Commands:
 mvn run
 python -m pytest test_main.py
@@ -181,7 +182,10 @@ git push origin main
 
 
 
+9.
+
 index.html
+
 ```html
 <!doctype html>
 <html>
@@ -204,6 +208,7 @@ index.html
 
 
 script.js
+
 (function (root, factory) {
   if (typeof module === "object" && module.exports) {
     module.exports = factory;
@@ -257,7 +262,7 @@ echo "hello world" > index.txt
 git add .
 git status
 git commit -m "initial commit"
-git remote add otigin 
+git remote add origin 
 git remote -v
 git branch -M main
 git push -u origin main
