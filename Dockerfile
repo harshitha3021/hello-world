@@ -262,3 +262,7 @@ git remote -v
 git branch -M main
 git push -u origin main
 echo 
+
+
+git remote set-url origin https://github.com/harshitha3021/  (repo name) .git
+
