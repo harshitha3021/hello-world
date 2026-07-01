@@ -236,3 +236,18 @@ script.js
 
 
 
+10.
+git config --global user.name "harshitha3021"
+git config --global user.mail "4mh23is041a@gmail.com"
+mkdir myproject3
+cd myproject3
+git init
+echo "hello world" > index.txt
+git add .
+git status
+git commit -m "initial commit"
+git remote add otigin 
+git remote -v
+git branch -M main
+git push -u origin main
+echo 
