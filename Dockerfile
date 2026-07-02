@@ -271,3 +271,38 @@ echo
 
 git remote set-url origin https://github.com/harshitha3021/  (repo name) .git
 
+in Cmd
+
+yit inft
+
+git branch -m main
+
+g14 add.
+
+git commit -m "inithal commit"
+
+git remote ald Crigin "url"
+
+echo "# my Project" README.md
+
+ght add README.and
+
+-m git comm't "Add README.md
+
+get puch - Drugi Origin main
+
+git remote
+
+in jerking
+
+new item - mypropeta
+
+Freestyle porojet
+
+git
+
+url
+
+branch-main
+
+lave
