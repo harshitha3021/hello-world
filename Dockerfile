@@ -271,31 +271,39 @@ echo
 
 git remote set-url origin https://github.com/harshitha3021/  (repo name) .git
 
+lab 10
+
+create folder in desktop - myproject
+
+- Create new repo. in github myprojects
+
+Add readme -on
+
 in Cmd
 
-yit inft
+Git init
 
 git branch -m main
 
-g14 add.
+git add .
 
 git commit -m "inithal commit"
 
-git remote ald Crigin "url"
+git remote add origin "url"
 
-echo "# my Project" README.md
+echo "# my Project">README.md
 
-ght add README.and
+git add README.md
 
--m git comm't "Add README.md
+ git commit -m "Add README.md
 
-get puch - Drugi Origin main
+get push - u Origin main
 
-git remote
+git remote -v
 
-in jerking
+in jerkins
 
-new item - mypropeta
+new item - myproject
 
 Freestyle porojet
 
@@ -305,4 +313,14 @@ url
 
 branch-main
 
-lave
+Save
+
+in cmd,
+
+echo "pipeline {agent any; stage{ stage{' Checkout'}
+
+gift add Jenkinsfile  
+
+git commit -m "Add Jenkinsfile"
+
+gut push origin main
